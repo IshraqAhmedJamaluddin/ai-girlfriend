@@ -4,5 +4,7 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/ai-girlfriend/",
+  // For Vercel deployment, use root path (/)
+  // For GitHub Pages, use subdirectory (/ai-girlfriend/)
+  base: "/",
 });
